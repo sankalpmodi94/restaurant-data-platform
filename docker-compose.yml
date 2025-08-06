@@ -5,12 +5,14 @@ services:
     image: apache/airflow:2.9.1
     container_name: airflow
     restart: always
+    env_file:
+      - .env
     environment:
       - AIRFLOW__CORE__LOAD_EXAMPLES=False
       - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=sqlite:////opt/airflow/airflow.db
     volumes:
       - ./airflow_dags:/opt/airflow/dags
-    command: webserver
+    command: bash -c "airflow db init && airflow webserver"
     ports:
       - "8080:8080"
 
