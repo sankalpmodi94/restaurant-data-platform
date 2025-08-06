@@ -19,7 +19,10 @@ services:
   duckdb-jupyter:
     image: jupyter/base-notebook
     container_name: duckdb-jupyter
+    restart: always
     volumes:
       - ./notebooks:/home/jovyan/work
+      - ./data:/home/jovyan/data
     ports:
       - "8888:8888"
+    command: bash -c "pip install duckdb pandas && jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookApp.token='' --NotebookApp.password=''"
