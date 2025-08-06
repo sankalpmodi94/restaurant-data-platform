@@ -1,0 +1,75 @@
+7-Day Restaurant Data Platform Implementation Plan
+Overview: This plan outlines a day-by-day approach to setting up a modern data platform for a restaurant
+business using DBT, DuckDB, Airflow, Google Sheets, Python, GitHub, and Metabase (or Looker Studio).
+Day 1: Project Initialization & GitHub Repo Setup
+Create a new GitHub repo ( restaurant-data-platform )
+Initialize project locally:
+git init
+Add .gitignore, README.md
+Initial commit & push to GitHub
+Set up folder structure:
+/airflow_dags/
+/notebooks/
+/dbt/
+/data/
+Create docker-compose.yml file
+Set up .env file with environment variables (e.g., Airflow creds)
+
+
+Day 2: Docker + Airflow Setup
+Install Docker Desktop (if not done already)
+Build and run containers:
+docker-compose up --build
+Initialize Airflow DB from container:
+docker exec -it airflow airflow db init
+docker exec -it airflow airflow users create ...
+Confirm Airflow UI at localhost:8080
+Commit .env , Dockerfile (if added), updated docker-compose.yml
+
+Day 3: DuckDB + Jupyter Setup
+Add DuckDB-compatible Jupyter container to Confirm Jupyter at localhost:8888
+Create first .duckdb file in /data/
+Build a test notebook to read/write data from DuckDB
+Git commit changes
+docker-compose.yml
+
+
+Day 4: DBT Setup
+Install DBT + DBT-DuckDB in local Python environment
+Initialize DBT project inside /dbt/
+dbt init dbt
+Create profiles.yml to connect DBT to DuckDB
+Create staging and marts folders:
+models/staging/
+models/marts/
+Write and test first DBT model from sample data
+Git commit all DBT setup files
+
+Day 5: Data Ingestion (Sheets + Python)
+Write a Python script to read Google Sheets using gspread or pandas + gspread-pandas
+Store raw data into DuckDB tables
+Place script in /airflow_dags/ or /scripts/
+Test script manually
+Git commit scripts and update README
+
+Day 6: Airflow DAGs for Automation
+Create Airflow DAG for daily ingestion + transformation:
+Task 1: Pull from Google Sheets → DuckDB
+Task 2: Run DBT transformation
+Test DAG manually in Airflow UI
+Schedule DAG to run daily
+Git commit DAGs
+
+Day 7: Dashboard Setup + Documentation
+Connect Metabase (or Looker Studio) to DuckDB
+Build basic dashboards:
+Daily sales
+Weekly trends
+Product performance
+Finalize project README with:
+How to run each component
+Folder structure
+.env examples
+Push final changes to GitHub
+Done! You now have a modern, end-to-end restaurant data platform fully version-controlled and running
+locally with automation.
