@@ -1,0 +1,1078 @@
+[0m16:40:56.402094 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffaf834cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffaf72d5d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffaf375950>]}
+
+
+============================== 16:40:56.404239 | eeae53b9-085b-4bf4-bcbe-eba11e07bca3 ==============================
+[0m16:40:56.404239 [info ] [MainThread]: Running with dbt=1.10.6
+[0m16:40:56.404854 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/home/jovyan/dbt_project', 'log_path': '/home/jovyan/dbt_project/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:40:56.409862 [info ] [MainThread]: dbt version: 1.10.6
+[0m16:40:56.410187 [info ] [MainThread]: python version: 3.11.6
+[0m16:40:56.410498 [info ] [MainThread]: python path: /opt/conda/bin/python3.11
+[0m16:40:56.410792 [info ] [MainThread]: os info: Linux-6.10.14-linuxkit-aarch64-with-glibc2.35
+[0m16:40:56.478215 [info ] [MainThread]: Using profiles dir at /home/jovyan/dbt_project
+[0m16:40:56.478783 [info ] [MainThread]: Using profiles.yml file at /home/jovyan/dbt_project/profiles.yml
+[0m16:40:56.479161 [info ] [MainThread]: Using dbt_project.yml file at /home/jovyan/dbt_project/dbt_project.yml
+[0m16:40:56.480203 [info ] [MainThread]: adapter type: duckdb
+[0m16:40:56.480497 [info ] [MainThread]: adapter version: 1.9.4
+[0m16:40:56.544823 [info ] [MainThread]: Configuration:
+[0m16:40:56.545273 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:40:56.545649 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:40:56.545934 [info ] [MainThread]: Required dependencies:
+[0m16:40:56.546249 [debug] [MainThread]: Executing "git --help"
+[0m16:40:56.546999 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m16:40:56.547267 [info ] [MainThread]: Connection:
+[0m16:40:56.547523 [info ] [MainThread]:   database: restaurant
+[0m16:40:56.547766 [info ] [MainThread]:   schema: main
+[0m16:40:56.548097 [info ] [MainThread]:   path: ../data/restaurant.duckdb
+[0m16:40:56.548362 [info ] [MainThread]:   config_options: None
+[0m16:40:56.548641 [info ] [MainThread]:   extensions: None
+[0m16:40:56.548878 [info ] [MainThread]:   settings: {}
+[0m16:40:56.549103 [info ] [MainThread]:   external_root: .
+[0m16:40:56.549346 [info ] [MainThread]:   use_credential_provider: None
+[0m16:40:56.549550 [info ] [MainThread]:   attach: None
+[0m16:40:56.549796 [info ] [MainThread]:   filesystems: None
+[0m16:40:56.550068 [info ] [MainThread]:   remote: None
+[0m16:40:56.550335 [info ] [MainThread]:   plugins: None
+[0m16:40:56.550817 [info ] [MainThread]:   disable_transactions: False
+[0m16:40:56.551285 [info ] [MainThread]: Registered adapter: duckdb=1.9.4
+[0m16:40:56.585436 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m16:40:56.596691 [debug] [MainThread]: Using duckdb connection "debug"
+[0m16:40:56.596931 [debug] [MainThread]: On debug: select 1 as id
+[0m16:40:56.597091 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:40:56.620951 [debug] [MainThread]: SQL status: OK in 0.024 seconds
+[0m16:40:56.621784 [debug] [MainThread]: On debug: Close
+[0m16:40:56.622146 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:40:56.622429 [info ] [MainThread]: [31m1 check failed:[0m
+[0m16:40:56.622870 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH: "git"
+
+[0m16:40:56.623763 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.25369, "process_in_blocks": "200", "process_kernel_time": 0.21801, "process_mem_max_rss": "143344", "process_out_blocks": "8", "process_user_time": 0.850042}
+[0m16:40:56.624059 [debug] [MainThread]: Command `dbt debug` failed at 16:40:56.624006 after 0.25 seconds
+[0m16:40:56.624295 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:40:56.624513 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb02a0450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffaf437710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffaf38ddd0>]}
+[0m16:40:56.624765 [debug] [MainThread]: Flushing usage events
+[0m16:40:58.901288 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:41:03.793897 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7c787b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7c92ac50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7f7af7d0>]}
+
+
+============================== 16:41:03.795934 | 71d8a418-98a2-40a1-a39d-197be94a12c8 ==============================
+[0m16:41:03.795934 [info ] [MainThread]: Running with dbt=1.10.6
+[0m16:41:03.796454 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/jovyan/dbt_project', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/home/jovyan/dbt_project/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m16:41:03.940559 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '71d8a418-98a2-40a1-a39d-197be94a12c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7c91e390>]}
+[0m16:41:03.971021 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '71d8a418-98a2-40a1-a39d-197be94a12c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7c684190>]}
+[0m16:41:03.972098 [info ] [MainThread]: Registered adapter: duckdb=1.9.4
+[0m16:41:04.005135 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m16:41:04.005834 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m16:41:04.006158 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '71d8a418-98a2-40a1-a39d-197be94a12c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7c7dddd0>]}
+[0m16:41:04.690754 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '71d8a418-98a2-40a1-a39d-197be94a12c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff78fe3350>]}
+[0m16:41:04.739540 [debug] [MainThread]: Wrote artifact WritableManifest to /home/jovyan/dbt_project/target/manifest.json
+[0m16:41:04.741394 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/jovyan/dbt_project/target/semantic_manifest.json
+[0m16:41:04.750776 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '71d8a418-98a2-40a1-a39d-197be94a12c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff78d52a90>]}
+[0m16:41:04.751275 [info ] [MainThread]: Found 3 models, 1 source, 429 macros
+[0m16:41:04.752161 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '71d8a418-98a2-40a1-a39d-197be94a12c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff78d3a910>]}
+[0m16:41:04.755137 [info ] [MainThread]: 
+[0m16:41:04.755753 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:41:04.756069 [info ] [MainThread]: 
+[0m16:41:04.756687 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m16:41:04.764313 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_restaurant'
+[0m16:41:04.791620 [debug] [ThreadPool]: Using duckdb connection "list_restaurant"
+[0m16:41:04.792212 [debug] [ThreadPool]: On list_restaurant: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "restaurant_data_platform", "target_name": "dev", "connection_name": "list_restaurant"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"restaurant"'
+    
+  
+  
+[0m16:41:04.792665 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:41:04.810116 [debug] [ThreadPool]: SQL status: OK in 0.017 seconds
+[0m16:41:04.812258 [debug] [ThreadPool]: On list_restaurant: Close
+[0m16:41:04.812969 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_restaurant, now create_restaurant_main)
+[0m16:41:04.813358 [debug] [ThreadPool]: Creating schema "database: "restaurant"
+schema: "main"
+"
+[0m16:41:04.817918 [debug] [ThreadPool]: Using duckdb connection "create_restaurant_main"
+[0m16:41:04.818190 [debug] [ThreadPool]: On create_restaurant_main: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "restaurant_data_platform", "target_name": "dev", "connection_name": "create_restaurant_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='restaurant'
+        and type='sqlite'
+    
+  
+[0m16:41:04.818412 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:41:04.819333 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m16:41:04.820266 [debug] [ThreadPool]: Using duckdb connection "create_restaurant_main"
+[0m16:41:04.820499 [debug] [ThreadPool]: On create_restaurant_main: BEGIN
+[0m16:41:04.820923 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m16:41:04.821101 [debug] [ThreadPool]: Using duckdb connection "create_restaurant_main"
+[0m16:41:04.821266 [debug] [ThreadPool]: On create_restaurant_main: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "restaurant_data_platform", "target_name": "dev", "connection_name": "create_restaurant_main"} */
+
+    
+    
+        create schema if not exists "restaurant"."main"
+    
+[0m16:41:04.821668 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m16:41:04.822169 [debug] [ThreadPool]: On create_restaurant_main: COMMIT
+[0m16:41:04.822366 [debug] [ThreadPool]: Using duckdb connection "create_restaurant_main"
+[0m16:41:04.822533 [debug] [ThreadPool]: On create_restaurant_main: COMMIT
+[0m16:41:04.822890 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m16:41:04.823087 [debug] [ThreadPool]: On create_restaurant_main: Close
+[0m16:41:04.824127 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_restaurant_main, now list_restaurant_main)
+[0m16:41:04.829277 [debug] [ThreadPool]: Using duckdb connection "list_restaurant_main"
+[0m16:41:04.829592 [debug] [ThreadPool]: On list_restaurant_main: BEGIN
+[0m16:41:04.829791 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:41:04.830944 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m16:41:04.831312 [debug] [ThreadPool]: Using duckdb connection "list_restaurant_main"
+[0m16:41:04.831750 [debug] [ThreadPool]: On list_restaurant_main: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "restaurant_data_platform", "target_name": "dev", "connection_name": "list_restaurant_main"} */
+select
+      'restaurant' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'restaurant'
+  
+[0m16:41:04.837700 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m16:41:04.838486 [debug] [ThreadPool]: On list_restaurant_main: ROLLBACK
+[0m16:41:04.839278 [debug] [ThreadPool]: Failed to rollback 'list_restaurant_main'
+[0m16:41:04.839522 [debug] [ThreadPool]: On list_restaurant_main: Close
+[0m16:41:04.840096 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '71d8a418-98a2-40a1-a39d-197be94a12c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff78ef9710>]}
+[0m16:41:04.840482 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:41:04.840699 [debug] [MainThread]: On master: BEGIN
+[0m16:41:04.840881 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:41:04.841342 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m16:41:04.841565 [debug] [MainThread]: On master: COMMIT
+[0m16:41:04.841761 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:41:04.841940 [debug] [MainThread]: On master: COMMIT
+[0m16:41:04.842214 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m16:41:04.842408 [debug] [MainThread]: On master: Close
+[0m16:41:04.846075 [debug] [Thread-1 (]: Began running node model.restaurant_data_platform.stg_soak_prep
+[0m16:41:04.846444 [info ] [Thread-1 (]: 1 of 3 START sql view model main.stg_soak_prep ................................. [RUN]
+[0m16:41:04.846766 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_restaurant_main, now model.restaurant_data_platform.stg_soak_prep)
+[0m16:41:04.847093 [debug] [Thread-1 (]: Began compiling node model.restaurant_data_platform.stg_soak_prep
+[0m16:41:04.851316 [debug] [Thread-1 (]: Writing injected SQL for node "model.restaurant_data_platform.stg_soak_prep"
+[0m16:41:04.853156 [debug] [Thread-1 (]: Began executing node model.restaurant_data_platform.stg_soak_prep
+[0m16:41:04.870877 [debug] [Thread-1 (]: Writing runtime sql for node "model.restaurant_data_platform.stg_soak_prep"
+[0m16:41:04.872463 [debug] [Thread-1 (]: Using duckdb connection "model.restaurant_data_platform.stg_soak_prep"
+[0m16:41:04.872745 [debug] [Thread-1 (]: On model.restaurant_data_platform.stg_soak_prep: BEGIN
+[0m16:41:04.872977 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:41:04.877621 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m16:41:04.877931 [debug] [Thread-1 (]: Using duckdb connection "model.restaurant_data_platform.stg_soak_prep"
+[0m16:41:04.878191 [debug] [Thread-1 (]: On model.restaurant_data_platform.stg_soak_prep: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "restaurant_data_platform", "target_name": "dev", "node_id": "model.restaurant_data_platform.stg_soak_prep"} */
+
+  
+  create view "restaurant"."main"."stg_soak_prep__dbt_tmp" as (
+    -- Staging model for soak preparation data
+SELECT 
+    Timestamp,
+    User,
+    Date,
+    Time,
+    Shift,
+    "Chhola Soak (KG)" as chhola_soak_kg,
+    "Dal Soak (KG)" as dal_soak_kg,
+    -- Add some data quality checks
+    CASE 
+        WHEN "Chhola Soak (KG)" > 0 OR "Dal Soak (KG)" > 0 
+        THEN 'valid' 
+        ELSE 'invalid' 
+    END as data_quality_flag
+FROM "main"."main"."soak_prep"
+WHERE Timestamp IS NOT NULL
+  );
+
+[0m16:41:04.880283 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "restaurant_data_platform", "target_name": "dev", "node_id": "model.restaurant_data_platform.stg_soak_prep"} */
+
+  
+  create view "restaurant"."main"."stg_soak_prep__dbt_tmp" as (
+    -- Staging model for soak preparation data
+SELECT 
+    Timestamp,
+    User,
+    Date,
+    Time,
+    Shift,
+    "Chhola Soak (KG)" as chhola_soak_kg,
+    "Dal Soak (KG)" as dal_soak_kg,
+    -- Add some data quality checks
+    CASE 
+        WHEN "Chhola Soak (KG)" > 0 OR "Dal Soak (KG)" > 0 
+        THEN 'valid' 
+        ELSE 'invalid' 
+    END as data_quality_flag
+FROM "main"."main"."soak_prep"
+WHERE Timestamp IS NOT NULL
+  );
+
+[0m16:41:04.880575 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m16:41:04.880879 [debug] [Thread-1 (]: On model.restaurant_data_platform.stg_soak_prep: ROLLBACK
+[0m16:41:04.883678 [debug] [Thread-1 (]: Failed to rollback 'model.restaurant_data_platform.stg_soak_prep'
+[0m16:41:04.883971 [debug] [Thread-1 (]: On model.restaurant_data_platform.stg_soak_prep: Close
+[0m16:41:04.885587 [debug] [Thread-1 (]: Runtime Error in model stg_soak_prep (models/staging/stg_soak_prep.sql)
+  Binder Error: Catalog "main" does not exist!
+[0m16:41:04.886914 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '71d8a418-98a2-40a1-a39d-197be94a12c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff789bc590>]}
+[0m16:41:04.887347 [error] [Thread-1 (]: 1 of 3 ERROR creating sql view model main.stg_soak_prep ........................ [[31mERROR[0m in 0.04s]
+[0m16:41:04.887813 [debug] [Thread-1 (]: Finished running node model.restaurant_data_platform.stg_soak_prep
+[0m16:41:04.888167 [debug] [Thread-7 (]: Marking all children of 'model.restaurant_data_platform.stg_soak_prep' to be skipped because of status 'error'.  Reason: Runtime Error in model stg_soak_prep (models/staging/stg_soak_prep.sql)
+  Binder Error: Catalog "main" does not exist!.
+[0m16:41:04.889126 [debug] [Thread-3 (]: Began running node model.restaurant_data_platform.daily_soak_summary
+[0m16:41:04.889322 [debug] [Thread-4 (]: Began running node model.restaurant_data_platform.user_performance
+[0m16:41:04.889587 [info ] [Thread-3 (]: 2 of 3 SKIP relation main.daily_soak_summary ................................... [[33mSKIP[0m]
+[0m16:41:04.890464 [debug] [Thread-3 (]: Finished running node model.restaurant_data_platform.daily_soak_summary
+[0m16:41:04.890053 [info ] [Thread-4 (]: 3 of 3 SKIP relation main.user_performance ..................................... [[33mSKIP[0m]
+[0m16:41:04.890846 [debug] [Thread-4 (]: Finished running node model.restaurant_data_platform.user_performance
+[0m16:41:04.891874 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:41:04.892090 [debug] [MainThread]: On master: BEGIN
+[0m16:41:04.892276 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:41:04.892899 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m16:41:04.893069 [debug] [MainThread]: On master: COMMIT
+[0m16:41:04.893217 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:41:04.893378 [debug] [MainThread]: On master: COMMIT
+[0m16:41:04.893645 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m16:41:04.893817 [debug] [MainThread]: On master: Close
+[0m16:41:04.894058 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:41:04.894206 [debug] [MainThread]: Connection 'model.restaurant_data_platform.stg_soak_prep' was properly closed.
+[0m16:41:04.894524 [info ] [MainThread]: 
+[0m16:41:04.894765 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 0 minutes and 0.14 seconds (0.14s).
+[0m16:41:04.895283 [debug] [MainThread]: Command end result
+[0m16:41:04.910610 [debug] [MainThread]: Wrote artifact WritableManifest to /home/jovyan/dbt_project/target/manifest.json
+[0m16:41:04.912273 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/jovyan/dbt_project/target/semantic_manifest.json
+[0m16:41:04.916283 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/jovyan/dbt_project/target/run_results.json
+[0m16:41:04.916531 [info ] [MainThread]: 
+[0m16:41:04.916821 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m16:41:04.917110 [info ] [MainThread]: 
+[0m16:41:04.917385 [error] [MainThread]: [31mFailure in model stg_soak_prep (models/staging/stg_soak_prep.sql)[0m
+[0m16:41:04.917669 [error] [MainThread]:   Runtime Error in model stg_soak_prep (models/staging/stg_soak_prep.sql)
+  Binder Error: Catalog "main" does not exist!
+[0m16:41:04.917923 [info ] [MainThread]: 
+[0m16:41:04.918184 [info ] [MainThread]:   compiled code at target/compiled/restaurant_data_platform/models/staging/stg_soak_prep.sql
+[0m16:41:04.918399 [info ] [MainThread]: 
+[0m16:41:04.918655 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=2 NO-OP=0 TOTAL=3
+[0m16:41:04.919629 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 1.1569196, "process_in_blocks": "328", "process_kernel_time": 0.259707, "process_mem_max_rss": "165732", "process_out_blocks": "2594", "process_user_time": 1.755336}
+[0m16:41:04.919936 [debug] [MainThread]: Command `dbt run` failed at 16:41:04.919869 after 1.16 seconds
+[0m16:41:04.920253 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7c78e690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7c761850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7cf56050>]}
+[0m16:41:04.920463 [debug] [MainThread]: Flushing usage events
+[0m16:41:06.611426 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:41:14.325314 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa6f65e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa6f65c90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa7112750>]}
+
+
+============================== 16:41:14.327188 | 8a0bdd03-a6d9-4248-804d-2523b218c3e9 ==============================
+[0m16:41:14.327188 [info ] [MainThread]: Running with dbt=1.10.6
+[0m16:41:14.327551 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/home/jovyan/dbt_project', 'log_path': '/home/jovyan/dbt_project/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt seed', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:41:14.444522 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8a0bdd03-a6d9-4248-804d-2523b218c3e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa6f676d0>]}
+[0m16:41:14.477141 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8a0bdd03-a6d9-4248-804d-2523b218c3e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffaa00a250>]}
+[0m16:41:14.478302 [info ] [MainThread]: Registered adapter: duckdb=1.9.4
+[0m16:41:14.511440 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m16:41:14.569762 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:41:14.570027 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:41:14.588010 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8a0bdd03-a6d9-4248-804d-2523b218c3e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa378d610>]}
+[0m16:41:14.627621 [debug] [MainThread]: Wrote artifact WritableManifest to /home/jovyan/dbt_project/target/manifest.json
+[0m16:41:14.628665 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/jovyan/dbt_project/target/semantic_manifest.json
+[0m16:41:14.637552 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8a0bdd03-a6d9-4248-804d-2523b218c3e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa36cfd10>]}
+[0m16:41:14.637850 [info ] [MainThread]: Found 3 models, 1 source, 429 macros
+[0m16:41:14.638189 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8a0bdd03-a6d9-4248-804d-2523b218c3e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa3683ad0>]}
+[0m16:41:14.639622 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m16:41:14.640862 [debug] [MainThread]: Command end result
+[0m16:41:14.653975 [debug] [MainThread]: Wrote artifact WritableManifest to /home/jovyan/dbt_project/target/manifest.json
+[0m16:41:14.654924 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/jovyan/dbt_project/target/semantic_manifest.json
+[0m16:41:14.656832 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/jovyan/dbt_project/target/run_results.json
+[0m16:41:14.657050 [info ] [MainThread]: 
+[0m16:41:14.657335 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:41:14.657560 [info ] [MainThread]: 
+[0m16:41:14.657857 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=0
+[0m16:41:14.658439 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 0.361423, "process_in_blocks": "0", "process_kernel_time": 0.159192, "process_mem_max_rss": "127876", "process_out_blocks": "1717", "process_user_time": 0.963164}
+[0m16:41:14.658739 [debug] [MainThread]: Command `dbt seed` succeeded at 16:41:14.658683 after 0.36 seconds
+[0m16:41:14.658979 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa7ea43d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa6f82710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffabfb7d10>]}
+[0m16:41:14.659495 [debug] [MainThread]: Flushing usage events
+[0m16:41:15.975740 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:41:33.232622 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff96c26c90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff96c26b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff96c255d0>]}
+
+
+============================== 16:41:33.234719 | 1b5ea7b8-a994-4e8a-9bd6-4881a974ca64 ==============================
+[0m16:41:33.234719 [info ] [MainThread]: Running with dbt=1.10.6
+[0m16:41:33.235362 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/home/jovyan/dbt_project', 'log_path': '/home/jovyan/dbt_project/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:41:33.342872 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1b5ea7b8-a994-4e8a-9bd6-4881a974ca64', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff96ad8fd0>]}
+[0m16:41:33.376519 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1b5ea7b8-a994-4e8a-9bd6-4881a974ca64', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff99ab6010>]}
+[0m16:41:33.377738 [info ] [MainThread]: Registered adapter: duckdb=1.9.4
+[0m16:41:33.412813 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m16:41:33.464832 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:41:33.465113 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:41:33.482605 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1b5ea7b8-a994-4e8a-9bd6-4881a974ca64', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff932e1710>]}
+[0m16:41:33.520831 [debug] [MainThread]: Wrote artifact WritableManifest to /home/jovyan/dbt_project/target/manifest.json
+[0m16:41:33.522071 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/jovyan/dbt_project/target/semantic_manifest.json
+[0m16:41:33.531246 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1b5ea7b8-a994-4e8a-9bd6-4881a974ca64', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff933c11d0>]}
+[0m16:41:33.531546 [info ] [MainThread]: Found 3 models, 1 source, 429 macros
+[0m16:41:33.531841 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1b5ea7b8-a994-4e8a-9bd6-4881a974ca64', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff93191d90>]}
+[0m16:41:33.532762 [info ] [MainThread]: 
+[0m16:41:33.533015 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:41:33.533282 [info ] [MainThread]: 
+[0m16:41:33.533592 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m16:41:33.536216 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_restaurant'
+[0m16:41:33.548974 [debug] [ThreadPool]: Using duckdb connection "list_restaurant"
+[0m16:41:33.549212 [debug] [ThreadPool]: On list_restaurant: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "restaurant_data_platform", "target_name": "dev", "connection_name": "list_restaurant"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"restaurant"'
+    
+  
+  
+[0m16:41:33.549405 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:41:33.564896 [debug] [ThreadPool]: SQL status: OK in 0.015 seconds
+[0m16:41:33.565875 [debug] [ThreadPool]: On list_restaurant: Close
+[0m16:41:33.566320 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_restaurant, now create_restaurant_main)
+[0m16:41:33.566614 [debug] [ThreadPool]: Creating schema "database: "restaurant"
+schema: "main"
+"
+[0m16:41:33.570756 [debug] [ThreadPool]: Using duckdb connection "create_restaurant_main"
+[0m16:41:33.570997 [debug] [ThreadPool]: On create_restaurant_main: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "restaurant_data_platform", "target_name": "dev", "connection_name": "create_restaurant_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='restaurant'
+        and type='sqlite'
+    
+  
+[0m16:41:33.571185 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:41:33.571694 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m16:41:33.572376 [debug] [ThreadPool]: Using duckdb connection "create_restaurant_main"
+[0m16:41:33.572567 [debug] [ThreadPool]: On create_restaurant_main: BEGIN
+[0m16:41:33.572949 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m16:41:33.573141 [debug] [ThreadPool]: Using duckdb connection "create_restaurant_main"
+[0m16:41:33.573319 [debug] [ThreadPool]: On create_restaurant_main: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "restaurant_data_platform", "target_name": "dev", "connection_name": "create_restaurant_main"} */
+
+    
+    
+        create schema if not exists "restaurant"."main"
+    
+[0m16:41:33.573723 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m16:41:33.575400 [debug] [ThreadPool]: On create_restaurant_main: COMMIT
+[0m16:41:33.575641 [debug] [ThreadPool]: Using duckdb connection "create_restaurant_main"
+[0m16:41:33.575898 [debug] [ThreadPool]: On create_restaurant_main: COMMIT
+[0m16:41:33.576278 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m16:41:33.576493 [debug] [ThreadPool]: On create_restaurant_main: Close
+[0m16:41:33.577327 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_restaurant_main, now list_restaurant_main)
+[0m16:41:33.580191 [debug] [ThreadPool]: Using duckdb connection "list_restaurant_main"
+[0m16:41:33.580392 [debug] [ThreadPool]: On list_restaurant_main: BEGIN
+[0m16:41:33.580573 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:41:33.580939 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m16:41:33.581116 [debug] [ThreadPool]: Using duckdb connection "list_restaurant_main"
+[0m16:41:33.581283 [debug] [ThreadPool]: On list_restaurant_main: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "restaurant_data_platform", "target_name": "dev", "connection_name": "list_restaurant_main"} */
+select
+      'restaurant' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'restaurant'
+  
+[0m16:41:33.587230 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m16:41:33.587940 [debug] [ThreadPool]: On list_restaurant_main: ROLLBACK
+[0m16:41:33.588427 [debug] [ThreadPool]: Failed to rollback 'list_restaurant_main'
+[0m16:41:33.588636 [debug] [ThreadPool]: On list_restaurant_main: Close
+[0m16:41:33.589185 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1b5ea7b8-a994-4e8a-9bd6-4881a974ca64', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff97afcbd0>]}
+[0m16:41:33.589505 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:41:33.589703 [debug] [MainThread]: On master: BEGIN
+[0m16:41:33.589893 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:41:33.590255 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m16:41:33.590438 [debug] [MainThread]: On master: COMMIT
+[0m16:41:33.590610 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:41:33.590784 [debug] [MainThread]: On master: COMMIT
+[0m16:41:33.591102 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m16:41:33.591279 [debug] [MainThread]: On master: Close
+[0m16:41:33.593136 [debug] [Thread-1 (]: Began running node model.restaurant_data_platform.stg_soak_prep
+[0m16:41:33.593447 [info ] [Thread-1 (]: 1 of 3 START sql view model main.stg_soak_prep ................................. [RUN]
+[0m16:41:33.593797 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_restaurant_main, now model.restaurant_data_platform.stg_soak_prep)
+[0m16:41:33.594058 [debug] [Thread-1 (]: Began compiling node model.restaurant_data_platform.stg_soak_prep
+[0m16:41:33.597951 [debug] [Thread-1 (]: Writing injected SQL for node "model.restaurant_data_platform.stg_soak_prep"
+[0m16:41:33.598678 [debug] [Thread-1 (]: Began executing node model.restaurant_data_platform.stg_soak_prep
+[0m16:41:33.645262 [debug] [Thread-1 (]: Writing runtime sql for node "model.restaurant_data_platform.stg_soak_prep"
+[0m16:41:33.646350 [debug] [Thread-1 (]: Using duckdb connection "model.restaurant_data_platform.stg_soak_prep"
+[0m16:41:33.646604 [debug] [Thread-1 (]: On model.restaurant_data_platform.stg_soak_prep: BEGIN
+[0m16:41:33.646833 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:41:33.647762 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m16:41:33.647986 [debug] [Thread-1 (]: Using duckdb connection "model.restaurant_data_platform.stg_soak_prep"
+[0m16:41:33.648175 [debug] [Thread-1 (]: On model.restaurant_data_platform.stg_soak_prep: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "restaurant_data_platform", "target_name": "dev", "node_id": "model.restaurant_data_platform.stg_soak_prep"} */
+
+  
+  create view "restaurant"."main"."stg_soak_prep__dbt_tmp" as (
+    -- Staging model for soak preparation data
+SELECT 
+    Timestamp,
+    User,
+    Date,
+    Time,
+    Shift,
+    "Chhola Soak (KG)" as chhola_soak_kg,
+    "Dal Soak (KG)" as dal_soak_kg,
+    -- Add some data quality checks
+    CASE 
+        WHEN "Chhola Soak (KG)" > 0 OR "Dal Soak (KG)" > 0 
+        THEN 'valid' 
+        ELSE 'invalid' 
+    END as data_quality_flag
+FROM "main"."main"."soak_prep"
+WHERE Timestamp IS NOT NULL
+  );
+
+[0m16:41:33.648906 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "restaurant_data_platform", "target_name": "dev", "node_id": "model.restaurant_data_platform.stg_soak_prep"} */
+
+  
+  create view "restaurant"."main"."stg_soak_prep__dbt_tmp" as (
+    -- Staging model for soak preparation data
+SELECT 
+    Timestamp,
+    User,
+    Date,
+    Time,
+    Shift,
+    "Chhola Soak (KG)" as chhola_soak_kg,
+    "Dal Soak (KG)" as dal_soak_kg,
+    -- Add some data quality checks
+    CASE 
+        WHEN "Chhola Soak (KG)" > 0 OR "Dal Soak (KG)" > 0 
+        THEN 'valid' 
+        ELSE 'invalid' 
+    END as data_quality_flag
+FROM "main"."main"."soak_prep"
+WHERE Timestamp IS NOT NULL
+  );
+
+[0m16:41:33.649103 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m16:41:33.649337 [debug] [Thread-1 (]: On model.restaurant_data_platform.stg_soak_prep: ROLLBACK
+[0m16:41:33.651624 [debug] [Thread-1 (]: Failed to rollback 'model.restaurant_data_platform.stg_soak_prep'
+[0m16:41:33.651822 [debug] [Thread-1 (]: On model.restaurant_data_platform.stg_soak_prep: Close
+[0m16:41:33.653105 [debug] [Thread-1 (]: Runtime Error in model stg_soak_prep (models/staging/stg_soak_prep.sql)
+  Binder Error: Catalog "main" does not exist!
+[0m16:41:33.653997 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1b5ea7b8-a994-4e8a-9bd6-4881a974ca64', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff92544e10>]}
+[0m16:41:33.654337 [error] [Thread-1 (]: 1 of 3 ERROR creating sql view model main.stg_soak_prep ........................ [[31mERROR[0m in 0.06s]
+[0m16:41:33.654675 [debug] [Thread-1 (]: Finished running node model.restaurant_data_platform.stg_soak_prep
+[0m16:41:33.655012 [debug] [Thread-7 (]: Marking all children of 'model.restaurant_data_platform.stg_soak_prep' to be skipped because of status 'error'.  Reason: Runtime Error in model stg_soak_prep (models/staging/stg_soak_prep.sql)
+  Binder Error: Catalog "main" does not exist!.
+[0m16:41:33.655883 [debug] [Thread-3 (]: Began running node model.restaurant_data_platform.daily_soak_summary
+[0m16:41:33.656070 [debug] [Thread-4 (]: Began running node model.restaurant_data_platform.user_performance
+[0m16:41:33.656355 [info ] [Thread-3 (]: 2 of 3 SKIP relation main.daily_soak_summary ................................... [[33mSKIP[0m]
+[0m16:41:33.657059 [debug] [Thread-3 (]: Finished running node model.restaurant_data_platform.daily_soak_summary
+[0m16:41:33.656711 [info ] [Thread-4 (]: 3 of 3 SKIP relation main.user_performance ..................................... [[33mSKIP[0m]
+[0m16:41:33.657522 [debug] [Thread-4 (]: Finished running node model.restaurant_data_platform.user_performance
+[0m16:41:33.658463 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:41:33.658704 [debug] [MainThread]: On master: BEGIN
+[0m16:41:33.658896 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:41:33.659272 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m16:41:33.659467 [debug] [MainThread]: On master: COMMIT
+[0m16:41:33.659646 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:41:33.659816 [debug] [MainThread]: On master: COMMIT
+[0m16:41:33.660159 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m16:41:33.660352 [debug] [MainThread]: On master: Close
+[0m16:41:33.660686 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:41:33.660875 [debug] [MainThread]: Connection 'model.restaurant_data_platform.stg_soak_prep' was properly closed.
+[0m16:41:33.661101 [info ] [MainThread]: 
+[0m16:41:33.661327 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 0 minutes and 0.13 seconds (0.13s).
+[0m16:41:33.661795 [debug] [MainThread]: Command end result
+[0m16:41:33.674908 [debug] [MainThread]: Wrote artifact WritableManifest to /home/jovyan/dbt_project/target/manifest.json
+[0m16:41:33.675837 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/jovyan/dbt_project/target/semantic_manifest.json
+[0m16:41:33.679182 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/jovyan/dbt_project/target/run_results.json
+[0m16:41:33.679358 [info ] [MainThread]: 
+[0m16:41:33.679582 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m16:41:33.679807 [info ] [MainThread]: 
+[0m16:41:33.680115 [error] [MainThread]: [31mFailure in model stg_soak_prep (models/staging/stg_soak_prep.sql)[0m
+[0m16:41:33.680381 [error] [MainThread]:   Runtime Error in model stg_soak_prep (models/staging/stg_soak_prep.sql)
+  Binder Error: Catalog "main" does not exist!
+[0m16:41:33.680581 [info ] [MainThread]: 
+[0m16:41:33.680826 [info ] [MainThread]:   compiled code at target/compiled/restaurant_data_platform/models/staging/stg_soak_prep.sql
+[0m16:41:33.681071 [info ] [MainThread]: 
+[0m16:41:33.681294 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=2 NO-OP=0 TOTAL=3
+[0m16:41:33.681896 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.47993535, "process_in_blocks": "0", "process_kernel_time": 0.157573, "process_mem_max_rss": "164144", "process_out_blocks": "1743", "process_user_time": 1.097999}
+[0m16:41:33.682144 [debug] [MainThread]: Command `dbt run` failed at 16:41:33.682096 after 0.48 seconds
+[0m16:41:33.682346 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff97256d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff9ba60790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff97248cd0>]}
+[0m16:41:33.682544 [debug] [MainThread]: Flushing usage events
+[0m16:41:35.087140 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:41:48.827512 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa6923010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa6922750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa6922610>]}
+
+
+============================== 16:41:48.829630 | 378136c9-2590-456b-9b07-8f7467675c47 ==============================
+[0m16:41:48.829630 [info ] [MainThread]: Running with dbt=1.10.6
+[0m16:41:48.830103 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/home/jovyan/dbt_project/logs', 'profiles_dir': '/home/jovyan/dbt_project', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:41:48.956505 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '378136c9-2590-456b-9b07-8f7467675c47', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa6783610>]}
+[0m16:41:48.986698 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '378136c9-2590-456b-9b07-8f7467675c47', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa97b5c90>]}
+[0m16:41:48.988180 [info ] [MainThread]: Registered adapter: duckdb=1.9.4
+[0m16:41:49.025189 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m16:41:49.078679 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m16:41:49.079147 [debug] [MainThread]: Partial parsing: updated file: restaurant_data_platform://models/sources.yml
+[0m16:41:49.286019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '378136c9-2590-456b-9b07-8f7467675c47', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa2d9ead0>]}
+[0m16:41:49.323893 [debug] [MainThread]: Wrote artifact WritableManifest to /home/jovyan/dbt_project/target/manifest.json
+[0m16:41:49.325000 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/jovyan/dbt_project/target/semantic_manifest.json
+[0m16:41:49.332351 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '378136c9-2590-456b-9b07-8f7467675c47', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa3150c50>]}
+[0m16:41:49.332639 [info ] [MainThread]: Found 3 models, 1 source, 429 macros
+[0m16:41:49.332909 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '378136c9-2590-456b-9b07-8f7467675c47', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa2d0de50>]}
+[0m16:41:49.333964 [info ] [MainThread]: 
+[0m16:41:49.334330 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:41:49.334543 [info ] [MainThread]: 
+[0m16:41:49.334984 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m16:41:49.337619 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_restaurant'
+[0m16:41:49.350564 [debug] [ThreadPool]: Using duckdb connection "list_restaurant"
+[0m16:41:49.350812 [debug] [ThreadPool]: On list_restaurant: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "restaurant_data_platform", "target_name": "dev", "connection_name": "list_restaurant"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"restaurant"'
+    
+  
+  
+[0m16:41:49.351043 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:41:49.367341 [debug] [ThreadPool]: SQL status: OK in 0.016 seconds
+[0m16:41:49.368175 [debug] [ThreadPool]: On list_restaurant: Close
+[0m16:41:49.368600 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_restaurant, now create_restaurant_main)
+[0m16:41:49.368923 [debug] [ThreadPool]: Creating schema "database: "restaurant"
+schema: "main"
+"
+[0m16:41:49.372683 [debug] [ThreadPool]: Using duckdb connection "create_restaurant_main"
+[0m16:41:49.372963 [debug] [ThreadPool]: On create_restaurant_main: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "restaurant_data_platform", "target_name": "dev", "connection_name": "create_restaurant_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='restaurant'
+        and type='sqlite'
+    
+  
+[0m16:41:49.373300 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:41:49.374127 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m16:41:49.375473 [debug] [ThreadPool]: Using duckdb connection "create_restaurant_main"
+[0m16:41:49.375718 [debug] [ThreadPool]: On create_restaurant_main: BEGIN
+[0m16:41:49.376582 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m16:41:49.378565 [debug] [ThreadPool]: Using duckdb connection "create_restaurant_main"
+[0m16:41:49.379105 [debug] [ThreadPool]: On create_restaurant_main: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "restaurant_data_platform", "target_name": "dev", "connection_name": "create_restaurant_main"} */
+
+    
+    
+        create schema if not exists "restaurant"."main"
+    
+[0m16:41:49.380166 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m16:41:49.381233 [debug] [ThreadPool]: On create_restaurant_main: COMMIT
+[0m16:41:49.381603 [debug] [ThreadPool]: Using duckdb connection "create_restaurant_main"
+[0m16:41:49.381879 [debug] [ThreadPool]: On create_restaurant_main: COMMIT
+[0m16:41:49.382269 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m16:41:49.382504 [debug] [ThreadPool]: On create_restaurant_main: Close
+[0m16:41:49.383601 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_restaurant_main, now list_restaurant_main)
+[0m16:41:49.387464 [debug] [ThreadPool]: Using duckdb connection "list_restaurant_main"
+[0m16:41:49.387711 [debug] [ThreadPool]: On list_restaurant_main: BEGIN
+[0m16:41:49.387956 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:41:49.390504 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m16:41:49.390715 [debug] [ThreadPool]: Using duckdb connection "list_restaurant_main"
+[0m16:41:49.390948 [debug] [ThreadPool]: On list_restaurant_main: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "restaurant_data_platform", "target_name": "dev", "connection_name": "list_restaurant_main"} */
+select
+      'restaurant' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'restaurant'
+  
+[0m16:41:49.400599 [debug] [ThreadPool]: SQL status: OK in 0.009 seconds
+[0m16:41:49.401519 [debug] [ThreadPool]: On list_restaurant_main: ROLLBACK
+[0m16:41:49.402019 [debug] [ThreadPool]: Failed to rollback 'list_restaurant_main'
+[0m16:41:49.402203 [debug] [ThreadPool]: On list_restaurant_main: Close
+[0m16:41:49.402725 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '378136c9-2590-456b-9b07-8f7467675c47', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa23455d0>]}
+[0m16:41:49.403024 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:41:49.403239 [debug] [MainThread]: On master: BEGIN
+[0m16:41:49.403387 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:41:49.403744 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m16:41:49.403982 [debug] [MainThread]: On master: COMMIT
+[0m16:41:49.404172 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:41:49.404329 [debug] [MainThread]: On master: COMMIT
+[0m16:41:49.404612 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m16:41:49.404797 [debug] [MainThread]: On master: Close
+[0m16:41:49.407480 [debug] [Thread-1 (]: Began running node model.restaurant_data_platform.stg_soak_prep
+[0m16:41:49.407863 [info ] [Thread-1 (]: 1 of 3 START sql view model main.stg_soak_prep ................................. [RUN]
+[0m16:41:49.408277 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_restaurant_main, now model.restaurant_data_platform.stg_soak_prep)
+[0m16:41:49.408604 [debug] [Thread-1 (]: Began compiling node model.restaurant_data_platform.stg_soak_prep
+[0m16:41:49.413051 [debug] [Thread-1 (]: Writing injected SQL for node "model.restaurant_data_platform.stg_soak_prep"
+[0m16:41:49.415394 [debug] [Thread-1 (]: Began executing node model.restaurant_data_platform.stg_soak_prep
+[0m16:41:49.433680 [debug] [Thread-1 (]: Writing runtime sql for node "model.restaurant_data_platform.stg_soak_prep"
+[0m16:41:49.434748 [debug] [Thread-1 (]: Using duckdb connection "model.restaurant_data_platform.stg_soak_prep"
+[0m16:41:49.435678 [debug] [Thread-1 (]: On model.restaurant_data_platform.stg_soak_prep: BEGIN
+[0m16:41:49.436745 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:41:49.444573 [debug] [Thread-1 (]: SQL status: OK in 0.008 seconds
+[0m16:41:49.446128 [debug] [Thread-1 (]: Using duckdb connection "model.restaurant_data_platform.stg_soak_prep"
+[0m16:41:49.446798 [debug] [Thread-1 (]: On model.restaurant_data_platform.stg_soak_prep: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "restaurant_data_platform", "target_name": "dev", "node_id": "model.restaurant_data_platform.stg_soak_prep"} */
+
+  
+  create view "restaurant"."main"."stg_soak_prep__dbt_tmp" as (
+    -- Staging model for soak preparation data
+SELECT 
+    Timestamp,
+    User,
+    Date,
+    Time,
+    Shift,
+    "Chhola Soak (KG)" as chhola_soak_kg,
+    "Dal Soak (KG)" as dal_soak_kg,
+    -- Add some data quality checks
+    CASE 
+        WHEN "Chhola Soak (KG)" > 0 OR "Dal Soak (KG)" > 0 
+        THEN 'valid' 
+        ELSE 'invalid' 
+    END as data_quality_flag
+FROM "restaurant"."raw"."soak_prep"
+WHERE Timestamp IS NOT NULL
+  );
+
+[0m16:41:49.448378 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "restaurant_data_platform", "target_name": "dev", "node_id": "model.restaurant_data_platform.stg_soak_prep"} */
+
+  
+  create view "restaurant"."main"."stg_soak_prep__dbt_tmp" as (
+    -- Staging model for soak preparation data
+SELECT 
+    Timestamp,
+    User,
+    Date,
+    Time,
+    Shift,
+    "Chhola Soak (KG)" as chhola_soak_kg,
+    "Dal Soak (KG)" as dal_soak_kg,
+    -- Add some data quality checks
+    CASE 
+        WHEN "Chhola Soak (KG)" > 0 OR "Dal Soak (KG)" > 0 
+        THEN 'valid' 
+        ELSE 'invalid' 
+    END as data_quality_flag
+FROM "restaurant"."raw"."soak_prep"
+WHERE Timestamp IS NOT NULL
+  );
+
+[0m16:41:49.448688 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m16:41:49.449037 [debug] [Thread-1 (]: On model.restaurant_data_platform.stg_soak_prep: ROLLBACK
+[0m16:41:49.451658 [debug] [Thread-1 (]: Failed to rollback 'model.restaurant_data_platform.stg_soak_prep'
+[0m16:41:49.451958 [debug] [Thread-1 (]: On model.restaurant_data_platform.stg_soak_prep: Close
+[0m16:41:49.453413 [debug] [Thread-1 (]: Runtime Error in model stg_soak_prep (models/staging/stg_soak_prep.sql)
+  Catalog Error: Table with name soak_prep does not exist!
+  Did you mean "main.soak_prep"?
+  
+  LINE 20: FROM "restaurant"."raw"."soak_prep"
+                ^
+[0m16:41:49.454446 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '378136c9-2590-456b-9b07-8f7467675c47', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa2339ed0>]}
+[0m16:41:49.454908 [error] [Thread-1 (]: 1 of 3 ERROR creating sql view model main.stg_soak_prep ........................ [[31mERROR[0m in 0.05s]
+[0m16:41:49.455423 [debug] [Thread-1 (]: Finished running node model.restaurant_data_platform.stg_soak_prep
+[0m16:41:49.455828 [debug] [Thread-7 (]: Marking all children of 'model.restaurant_data_platform.stg_soak_prep' to be skipped because of status 'error'.  Reason: Runtime Error in model stg_soak_prep (models/staging/stg_soak_prep.sql)
+  Catalog Error: Table with name soak_prep does not exist!
+  Did you mean "main.soak_prep"?
+  
+  LINE 20: FROM "restaurant"."raw"."soak_prep"
+                ^.
+[0m16:41:49.456787 [debug] [Thread-3 (]: Began running node model.restaurant_data_platform.daily_soak_summary
+[0m16:41:49.457090 [debug] [Thread-4 (]: Began running node model.restaurant_data_platform.user_performance
+[0m16:41:49.457370 [info ] [Thread-3 (]: 2 of 3 SKIP relation main.daily_soak_summary ................................... [[33mSKIP[0m]
+[0m16:41:49.458185 [debug] [Thread-3 (]: Finished running node model.restaurant_data_platform.daily_soak_summary
+[0m16:41:49.457751 [info ] [Thread-4 (]: 3 of 3 SKIP relation main.user_performance ..................................... [[33mSKIP[0m]
+[0m16:41:49.458544 [debug] [Thread-4 (]: Finished running node model.restaurant_data_platform.user_performance
+[0m16:41:49.459699 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:41:49.459986 [debug] [MainThread]: On master: BEGIN
+[0m16:41:49.460159 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:41:49.460622 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m16:41:49.460828 [debug] [MainThread]: On master: COMMIT
+[0m16:41:49.461029 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:41:49.461202 [debug] [MainThread]: On master: COMMIT
+[0m16:41:49.461523 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m16:41:49.461717 [debug] [MainThread]: On master: Close
+[0m16:41:49.462155 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:41:49.462345 [debug] [MainThread]: Connection 'model.restaurant_data_platform.stg_soak_prep' was properly closed.
+[0m16:41:49.462556 [info ] [MainThread]: 
+[0m16:41:49.463048 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 0 minutes and 0.13 seconds (0.13s).
+[0m16:41:49.463543 [debug] [MainThread]: Command end result
+[0m16:41:49.478685 [debug] [MainThread]: Wrote artifact WritableManifest to /home/jovyan/dbt_project/target/manifest.json
+[0m16:41:49.480747 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/jovyan/dbt_project/target/semantic_manifest.json
+[0m16:41:49.485437 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/jovyan/dbt_project/target/run_results.json
+[0m16:41:49.485658 [info ] [MainThread]: 
+[0m16:41:49.485911 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m16:41:49.486398 [info ] [MainThread]: 
+[0m16:41:49.486741 [error] [MainThread]: [31mFailure in model stg_soak_prep (models/staging/stg_soak_prep.sql)[0m
+[0m16:41:49.487085 [error] [MainThread]:   Runtime Error in model stg_soak_prep (models/staging/stg_soak_prep.sql)
+  Catalog Error: Table with name soak_prep does not exist!
+  Did you mean "main.soak_prep"?
+  
+  LINE 20: FROM "restaurant"."raw"."soak_prep"
+                ^
+[0m16:41:49.487310 [info ] [MainThread]: 
+[0m16:41:49.487700 [info ] [MainThread]:   compiled code at target/compiled/restaurant_data_platform/models/staging/stg_soak_prep.sql
+[0m16:41:49.487953 [info ] [MainThread]: 
+[0m16:41:49.488213 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=2 NO-OP=0 TOTAL=3
+[0m16:41:49.488907 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.6910983, "process_in_blocks": "0", "process_kernel_time": 0.166779, "process_mem_max_rss": "165520", "process_out_blocks": "2594", "process_user_time": 1.325194}
+[0m16:41:49.489195 [debug] [MainThread]: Command `dbt run` failed at 16:41:49.489130 after 0.69 seconds
+[0m16:41:49.489441 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa675db10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa6b35d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffa6f51fd0>]}
+[0m16:41:49.489684 [debug] [MainThread]: Flushing usage events
+[0m16:41:50.950801 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:42:04.949409 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb45e4a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb45e5c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb4442750>]}
+
+
+============================== 16:42:04.951909 | 0d9a6fde-42a9-4aff-ab4f-762eb203508c ==============================
+[0m16:42:04.951909 [info ] [MainThread]: Running with dbt=1.10.6
+[0m16:42:04.952360 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/home/jovyan/dbt_project/logs', 'fail_fast': 'False', 'profiles_dir': '/home/jovyan/dbt_project', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:42:05.075149 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0d9a6fde-42a9-4aff-ab4f-762eb203508c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb44a5510>]}
+[0m16:42:05.104943 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0d9a6fde-42a9-4aff-ab4f-762eb203508c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb7468190>]}
+[0m16:42:05.105897 [info ] [MainThread]: Registered adapter: duckdb=1.9.4
+[0m16:42:05.139631 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m16:42:05.192978 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m16:42:05.193456 [debug] [MainThread]: Partial parsing: updated file: restaurant_data_platform://models/sources.yml
+[0m16:42:05.396557 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0d9a6fde-42a9-4aff-ab4f-762eb203508c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb0ac3bd0>]}
+[0m16:42:05.432869 [debug] [MainThread]: Wrote artifact WritableManifest to /home/jovyan/dbt_project/target/manifest.json
+[0m16:42:05.433925 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/jovyan/dbt_project/target/semantic_manifest.json
+[0m16:42:05.441283 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0d9a6fde-42a9-4aff-ab4f-762eb203508c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb0e3a7d0>]}
+[0m16:42:05.441609 [info ] [MainThread]: Found 3 models, 1 source, 429 macros
+[0m16:42:05.441895 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0d9a6fde-42a9-4aff-ab4f-762eb203508c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb0b87450>]}
+[0m16:42:05.442938 [info ] [MainThread]: 
+[0m16:42:05.443193 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:42:05.443617 [info ] [MainThread]: 
+[0m16:42:05.443981 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m16:42:05.446512 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_restaurant'
+[0m16:42:05.460427 [debug] [ThreadPool]: Using duckdb connection "list_restaurant"
+[0m16:42:05.460737 [debug] [ThreadPool]: On list_restaurant: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "restaurant_data_platform", "target_name": "dev", "connection_name": "list_restaurant"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"restaurant"'
+    
+  
+  
+[0m16:42:05.461003 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:42:05.474364 [debug] [ThreadPool]: SQL status: OK in 0.013 seconds
+[0m16:42:05.475096 [debug] [ThreadPool]: On list_restaurant: Close
+[0m16:42:05.475519 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_restaurant, now create_restaurant_main)
+[0m16:42:05.475826 [debug] [ThreadPool]: Creating schema "database: "restaurant"
+schema: "main"
+"
+[0m16:42:05.479584 [debug] [ThreadPool]: Using duckdb connection "create_restaurant_main"
+[0m16:42:05.479864 [debug] [ThreadPool]: On create_restaurant_main: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "restaurant_data_platform", "target_name": "dev", "connection_name": "create_restaurant_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='restaurant'
+        and type='sqlite'
+    
+  
+[0m16:42:05.480083 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:42:05.480648 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m16:42:05.481341 [debug] [ThreadPool]: Using duckdb connection "create_restaurant_main"
+[0m16:42:05.481525 [debug] [ThreadPool]: On create_restaurant_main: BEGIN
+[0m16:42:05.481860 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m16:42:05.482046 [debug] [ThreadPool]: Using duckdb connection "create_restaurant_main"
+[0m16:42:05.482224 [debug] [ThreadPool]: On create_restaurant_main: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "restaurant_data_platform", "target_name": "dev", "connection_name": "create_restaurant_main"} */
+
+    
+    
+        create schema if not exists "restaurant"."main"
+    
+[0m16:42:05.482636 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m16:42:05.483057 [debug] [ThreadPool]: On create_restaurant_main: COMMIT
+[0m16:42:05.483249 [debug] [ThreadPool]: Using duckdb connection "create_restaurant_main"
+[0m16:42:05.483455 [debug] [ThreadPool]: On create_restaurant_main: COMMIT
+[0m16:42:05.483779 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m16:42:05.483989 [debug] [ThreadPool]: On create_restaurant_main: Close
+[0m16:42:05.484831 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_restaurant_main, now list_restaurant_main)
+[0m16:42:05.489404 [debug] [ThreadPool]: Using duckdb connection "list_restaurant_main"
+[0m16:42:05.489642 [debug] [ThreadPool]: On list_restaurant_main: BEGIN
+[0m16:42:05.489831 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:42:05.490258 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m16:42:05.490482 [debug] [ThreadPool]: Using duckdb connection "list_restaurant_main"
+[0m16:42:05.490694 [debug] [ThreadPool]: On list_restaurant_main: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "restaurant_data_platform", "target_name": "dev", "connection_name": "list_restaurant_main"} */
+select
+      'restaurant' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'restaurant'
+  
+[0m16:42:05.497838 [debug] [ThreadPool]: SQL status: OK in 0.007 seconds
+[0m16:42:05.498800 [debug] [ThreadPool]: On list_restaurant_main: ROLLBACK
+[0m16:42:05.499236 [debug] [ThreadPool]: Failed to rollback 'list_restaurant_main'
+[0m16:42:05.499449 [debug] [ThreadPool]: On list_restaurant_main: Close
+[0m16:42:05.499932 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0d9a6fde-42a9-4aff-ab4f-762eb203508c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb0a07850>]}
+[0m16:42:05.500231 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:42:05.500418 [debug] [MainThread]: On master: BEGIN
+[0m16:42:05.500583 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:42:05.500857 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m16:42:05.501008 [debug] [MainThread]: On master: COMMIT
+[0m16:42:05.501151 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:42:05.501283 [debug] [MainThread]: On master: COMMIT
+[0m16:42:05.501580 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m16:42:05.501734 [debug] [MainThread]: On master: Close
+[0m16:42:05.503303 [debug] [Thread-1 (]: Began running node model.restaurant_data_platform.stg_soak_prep
+[0m16:42:05.503654 [info ] [Thread-1 (]: 1 of 3 START sql view model main.stg_soak_prep ................................. [RUN]
+[0m16:42:05.504004 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_restaurant_main, now model.restaurant_data_platform.stg_soak_prep)
+[0m16:42:05.504327 [debug] [Thread-1 (]: Began compiling node model.restaurant_data_platform.stg_soak_prep
+[0m16:42:05.508336 [debug] [Thread-1 (]: Writing injected SQL for node "model.restaurant_data_platform.stg_soak_prep"
+[0m16:42:05.509027 [debug] [Thread-1 (]: Began executing node model.restaurant_data_platform.stg_soak_prep
+[0m16:42:05.526695 [debug] [Thread-1 (]: Writing runtime sql for node "model.restaurant_data_platform.stg_soak_prep"
+[0m16:42:05.527599 [debug] [Thread-1 (]: Using duckdb connection "model.restaurant_data_platform.stg_soak_prep"
+[0m16:42:05.527901 [debug] [Thread-1 (]: On model.restaurant_data_platform.stg_soak_prep: BEGIN
+[0m16:42:05.528128 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:42:05.534149 [debug] [Thread-1 (]: SQL status: OK in 0.006 seconds
+[0m16:42:05.534358 [debug] [Thread-1 (]: Using duckdb connection "model.restaurant_data_platform.stg_soak_prep"
+[0m16:42:05.534555 [debug] [Thread-1 (]: On model.restaurant_data_platform.stg_soak_prep: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "restaurant_data_platform", "target_name": "dev", "node_id": "model.restaurant_data_platform.stg_soak_prep"} */
+
+  
+  create view "restaurant"."main"."stg_soak_prep__dbt_tmp" as (
+    -- Staging model for soak preparation data
+SELECT 
+    Timestamp,
+    User,
+    Date,
+    Time,
+    Shift,
+    "Chhola Soak (KG)" as chhola_soak_kg,
+    "Dal Soak (KG)" as dal_soak_kg,
+    -- Add some data quality checks
+    CASE 
+        WHEN "Chhola Soak (KG)" > 0 OR "Dal Soak (KG)" > 0 
+        THEN 'valid' 
+        ELSE 'invalid' 
+    END as data_quality_flag
+FROM "restaurant"."main"."soak_prep"
+WHERE Timestamp IS NOT NULL
+  );
+
+[0m16:42:05.535075 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:42:05.538548 [debug] [Thread-1 (]: Using duckdb connection "model.restaurant_data_platform.stg_soak_prep"
+[0m16:42:05.538847 [debug] [Thread-1 (]: On model.restaurant_data_platform.stg_soak_prep: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "restaurant_data_platform", "target_name": "dev", "node_id": "model.restaurant_data_platform.stg_soak_prep"} */
+alter view "restaurant"."main"."stg_soak_prep__dbt_tmp" rename to "stg_soak_prep"
+[0m16:42:05.541027 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m16:42:05.545964 [debug] [Thread-1 (]: On model.restaurant_data_platform.stg_soak_prep: COMMIT
+[0m16:42:05.546200 [debug] [Thread-1 (]: Using duckdb connection "model.restaurant_data_platform.stg_soak_prep"
+[0m16:42:05.546375 [debug] [Thread-1 (]: On model.restaurant_data_platform.stg_soak_prep: COMMIT
+[0m16:42:05.547040 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:42:05.549855 [debug] [Thread-1 (]: Using duckdb connection "model.restaurant_data_platform.stg_soak_prep"
+[0m16:42:05.550050 [debug] [Thread-1 (]: On model.restaurant_data_platform.stg_soak_prep: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "restaurant_data_platform", "target_name": "dev", "node_id": "model.restaurant_data_platform.stg_soak_prep"} */
+
+      drop view if exists "restaurant"."main"."stg_soak_prep__dbt_backup" cascade
+    
+[0m16:42:05.550367 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:42:05.551635 [debug] [Thread-1 (]: On model.restaurant_data_platform.stg_soak_prep: Close
+[0m16:42:05.552534 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0d9a6fde-42a9-4aff-ab4f-762eb203508c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb0019590>]}
+[0m16:42:05.552865 [info ] [Thread-1 (]: 1 of 3 OK created sql view model main.stg_soak_prep ............................ [[32mOK[0m in 0.05s]
+[0m16:42:05.553206 [debug] [Thread-1 (]: Finished running node model.restaurant_data_platform.stg_soak_prep
+[0m16:42:05.553806 [debug] [Thread-3 (]: Began running node model.restaurant_data_platform.daily_soak_summary
+[0m16:42:05.553983 [debug] [Thread-4 (]: Began running node model.restaurant_data_platform.user_performance
+[0m16:42:05.554256 [info ] [Thread-3 (]: 2 of 3 START sql table model main.daily_soak_summary ........................... [RUN]
+[0m16:42:05.554992 [debug] [Thread-3 (]: Acquiring new duckdb connection 'model.restaurant_data_platform.daily_soak_summary'
+[0m16:42:05.555214 [debug] [Thread-3 (]: Began compiling node model.restaurant_data_platform.daily_soak_summary
+[0m16:42:05.554622 [info ] [Thread-4 (]: 3 of 3 START sql table model main.user_performance ............................. [RUN]
+[0m16:42:05.557046 [debug] [Thread-4 (]: Acquiring new duckdb connection 'model.restaurant_data_platform.user_performance'
+[0m16:42:05.557211 [debug] [Thread-4 (]: Began compiling node model.restaurant_data_platform.user_performance
+[0m16:42:05.556787 [debug] [Thread-3 (]: Writing injected SQL for node "model.restaurant_data_platform.daily_soak_summary"
+[0m16:42:05.558654 [debug] [Thread-4 (]: Writing injected SQL for node "model.restaurant_data_platform.user_performance"
+[0m16:42:05.559764 [debug] [Thread-4 (]: Began executing node model.restaurant_data_platform.user_performance
+[0m16:42:05.567594 [debug] [Thread-3 (]: Began executing node model.restaurant_data_platform.daily_soak_summary
+[0m16:42:05.570414 [debug] [Thread-4 (]: Writing runtime sql for node "model.restaurant_data_platform.user_performance"
+[0m16:42:05.572215 [debug] [Thread-3 (]: Writing runtime sql for node "model.restaurant_data_platform.daily_soak_summary"
+[0m16:42:05.573430 [debug] [Thread-3 (]: Using duckdb connection "model.restaurant_data_platform.daily_soak_summary"
+[0m16:42:05.573708 [debug] [Thread-3 (]: On model.restaurant_data_platform.daily_soak_summary: BEGIN
+[0m16:42:05.573927 [debug] [Thread-4 (]: Using duckdb connection "model.restaurant_data_platform.user_performance"
+[0m16:42:05.574334 [debug] [Thread-4 (]: On model.restaurant_data_platform.user_performance: BEGIN
+[0m16:42:05.574490 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m16:42:05.574138 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m16:42:05.574895 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m16:42:05.575348 [debug] [Thread-4 (]: Using duckdb connection "model.restaurant_data_platform.user_performance"
+[0m16:42:05.575510 [debug] [Thread-4 (]: On model.restaurant_data_platform.user_performance: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "restaurant_data_platform", "target_name": "dev", "node_id": "model.restaurant_data_platform.user_performance"} */
+
+  
+    
+    
+
+    create  table
+      "restaurant"."main"."user_performance__dbt_tmp"
+  
+    as (
+      -- User performance analysis
+SELECT 
+    User,
+    COUNT(*) as total_entries,
+    SUM(chhola_soak_kg) as total_chhola_kg,
+    SUM(dal_soak_kg) as total_dal_kg,
+    AVG(chhola_soak_kg) as avg_chhola_kg,
+    AVG(dal_soak_kg) as avg_dal_kg,
+    COUNT(DISTINCT Date) as days_worked
+FROM "restaurant"."main"."stg_soak_prep"
+WHERE data_quality_flag = 'valid'
+GROUP BY User
+ORDER BY total_chhola_kg DESC
+    );
+  
+  
+[0m16:42:05.575188 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m16:42:05.576709 [debug] [Thread-3 (]: Using duckdb connection "model.restaurant_data_platform.daily_soak_summary"
+[0m16:42:05.579425 [debug] [Thread-3 (]: On model.restaurant_data_platform.daily_soak_summary: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "restaurant_data_platform", "target_name": "dev", "node_id": "model.restaurant_data_platform.daily_soak_summary"} */
+
+  
+    
+    
+
+    create  table
+      "restaurant"."main"."daily_soak_summary__dbt_tmp"
+  
+    as (
+      -- Daily summary of soak preparation
+SELECT 
+    Date,
+    COUNT(*) as total_entries,
+    SUM(chhola_soak_kg) as total_chhola_kg,
+    SUM(dal_soak_kg) as total_dal_kg,
+    AVG(chhola_soak_kg) as avg_chhola_kg,
+    AVG(dal_soak_kg) as avg_dal_kg,
+    COUNT(DISTINCT User) as unique_users
+FROM "restaurant"."main"."stg_soak_prep"
+WHERE data_quality_flag = 'valid'
+GROUP BY Date
+ORDER BY Date DESC
+    );
+  
+  
+[0m16:42:05.585656 [debug] [Thread-4 (]: SQL status: OK in 0.009 seconds
+[0m16:42:05.588510 [debug] [Thread-4 (]: Using duckdb connection "model.restaurant_data_platform.user_performance"
+[0m16:42:05.590654 [debug] [Thread-4 (]: On model.restaurant_data_platform.user_performance: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "restaurant_data_platform", "target_name": "dev", "node_id": "model.restaurant_data_platform.user_performance"} */
+alter table "restaurant"."main"."user_performance__dbt_tmp" rename to "user_performance"
+[0m16:42:05.591584 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m16:42:05.591822 [debug] [Thread-3 (]: SQL status: OK in 0.009 seconds
+[0m16:42:05.597214 [debug] [Thread-3 (]: Using duckdb connection "model.restaurant_data_platform.daily_soak_summary"
+[0m16:42:05.597424 [debug] [Thread-3 (]: On model.restaurant_data_platform.daily_soak_summary: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "restaurant_data_platform", "target_name": "dev", "node_id": "model.restaurant_data_platform.daily_soak_summary"} */
+alter table "restaurant"."main"."daily_soak_summary__dbt_tmp" rename to "daily_soak_summary"
+[0m16:42:05.597806 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m16:42:05.594680 [debug] [Thread-4 (]: On model.restaurant_data_platform.user_performance: COMMIT
+[0m16:42:05.598683 [debug] [Thread-4 (]: Using duckdb connection "model.restaurant_data_platform.user_performance"
+[0m16:42:05.598885 [debug] [Thread-4 (]: On model.restaurant_data_platform.user_performance: COMMIT
+[0m16:42:05.598446 [debug] [Thread-3 (]: On model.restaurant_data_platform.daily_soak_summary: COMMIT
+[0m16:42:05.599475 [debug] [Thread-3 (]: Using duckdb connection "model.restaurant_data_platform.daily_soak_summary"
+[0m16:42:05.599834 [debug] [Thread-3 (]: On model.restaurant_data_platform.daily_soak_summary: COMMIT
+[0m16:42:05.599670 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m16:42:05.601225 [debug] [Thread-4 (]: Using duckdb connection "model.restaurant_data_platform.user_performance"
+[0m16:42:05.601565 [debug] [Thread-4 (]: On model.restaurant_data_platform.user_performance: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "restaurant_data_platform", "target_name": "dev", "node_id": "model.restaurant_data_platform.user_performance"} */
+
+      drop table if exists "restaurant"."main"."user_performance__dbt_backup" cascade
+    
+[0m16:42:05.602094 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m16:42:05.602730 [debug] [Thread-4 (]: On model.restaurant_data_platform.user_performance: Close
+[0m16:42:05.601874 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m16:42:05.604580 [debug] [Thread-3 (]: Using duckdb connection "model.restaurant_data_platform.daily_soak_summary"
+[0m16:42:05.604759 [debug] [Thread-3 (]: On model.restaurant_data_platform.daily_soak_summary: /* {"app": "dbt", "dbt_version": "1.10.6", "profile_name": "restaurant_data_platform", "target_name": "dev", "node_id": "model.restaurant_data_platform.daily_soak_summary"} */
+
+      drop table if exists "restaurant"."main"."daily_soak_summary__dbt_backup" cascade
+    
+[0m16:42:05.603426 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0d9a6fde-42a9-4aff-ab4f-762eb203508c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb00f6690>]}
+[0m16:42:05.605377 [info ] [Thread-4 (]: 3 of 3 OK created sql table model main.user_performance ........................ [[32mOK[0m in 0.05s]
+[0m16:42:05.605752 [debug] [Thread-4 (]: Finished running node model.restaurant_data_platform.user_performance
+[0m16:42:05.605032 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m16:42:05.606547 [debug] [Thread-3 (]: On model.restaurant_data_platform.daily_soak_summary: Close
+[0m16:42:05.606891 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0d9a6fde-42a9-4aff-ab4f-762eb203508c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffabf03710>]}
+[0m16:42:05.607192 [info ] [Thread-3 (]: 2 of 3 OK created sql table model main.daily_soak_summary ...................... [[32mOK[0m in 0.05s]
+[0m16:42:05.607539 [debug] [Thread-3 (]: Finished running node model.restaurant_data_platform.daily_soak_summary
+[0m16:42:05.608425 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:42:05.608622 [debug] [MainThread]: On master: BEGIN
+[0m16:42:05.608789 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:42:05.609107 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m16:42:05.609277 [debug] [MainThread]: On master: COMMIT
+[0m16:42:05.609435 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:42:05.609587 [debug] [MainThread]: On master: COMMIT
+[0m16:42:05.609804 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m16:42:05.609970 [debug] [MainThread]: On master: Close
+[0m16:42:05.610194 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:42:05.610387 [debug] [MainThread]: Connection 'model.restaurant_data_platform.stg_soak_prep' was properly closed.
+[0m16:42:05.610570 [debug] [MainThread]: Connection 'model.restaurant_data_platform.daily_soak_summary' was properly closed.
+[0m16:42:05.610750 [debug] [MainThread]: Connection 'model.restaurant_data_platform.user_performance' was properly closed.
+[0m16:42:05.610962 [info ] [MainThread]: 
+[0m16:42:05.611210 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 0 minutes and 0.17 seconds (0.17s).
+[0m16:42:05.612112 [debug] [MainThread]: Command end result
+[0m16:42:05.626735 [debug] [MainThread]: Wrote artifact WritableManifest to /home/jovyan/dbt_project/target/manifest.json
+[0m16:42:05.628326 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/jovyan/dbt_project/target/semantic_manifest.json
+[0m16:42:05.632349 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/jovyan/dbt_project/target/run_results.json
+[0m16:42:05.632578 [info ] [MainThread]: 
+[0m16:42:05.632845 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:42:05.633130 [info ] [MainThread]: 
+[0m16:42:05.633365 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m16:42:05.634059 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.71958077, "process_in_blocks": "0", "process_kernel_time": 0.219994, "process_mem_max_rss": "193788", "process_out_blocks": "2642", "process_user_time": 1.311007}
+[0m16:42:05.634346 [debug] [MainThread]: Command `dbt run` succeeded at 16:42:05.634282 after 0.72 seconds
+[0m16:42:05.634588 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb461dc50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb0fcf8d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb93c0790>]}
+[0m16:42:05.634786 [debug] [MainThread]: Flushing usage events
+[0m16:42:07.187500 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:42:13.298639 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff84187310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8116a110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8116a750>]}
+
+
+============================== 16:42:13.301034 | f59b8e00-5015-4c6f-a7a7-9ccd29af6068 ==============================
+[0m16:42:13.301034 [info ] [MainThread]: Running with dbt=1.10.6
+[0m16:42:13.301551 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/jovyan/dbt_project', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/home/jovyan/dbt_project/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'invocation_command': 'dbt test', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:42:13.423001 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f59b8e00-5015-4c6f-a7a7-9ccd29af6068', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7db08fd0>]}
+[0m16:42:13.452515 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f59b8e00-5015-4c6f-a7a7-9ccd29af6068', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff841aa0d0>]}
+[0m16:42:13.453484 [info ] [MainThread]: Registered adapter: duckdb=1.9.4
+[0m16:42:13.487063 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m16:42:13.541015 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:42:13.541272 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:42:13.559286 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f59b8e00-5015-4c6f-a7a7-9ccd29af6068', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7d9d2f10>]}
+[0m16:42:13.600209 [debug] [MainThread]: Wrote artifact WritableManifest to /home/jovyan/dbt_project/target/manifest.json
+[0m16:42:13.601479 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/jovyan/dbt_project/target/semantic_manifest.json
+[0m16:42:13.614996 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f59b8e00-5015-4c6f-a7a7-9ccd29af6068', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7d64cbd0>]}
+[0m16:42:13.615325 [info ] [MainThread]: Found 3 models, 1 source, 429 macros
+[0m16:42:13.615631 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f59b8e00-5015-4c6f-a7a7-9ccd29af6068', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7d8d49d0>]}
+[0m16:42:13.616542 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m16:42:13.617613 [debug] [MainThread]: Command end result
+[0m16:42:13.630687 [debug] [MainThread]: Wrote artifact WritableManifest to /home/jovyan/dbt_project/target/manifest.json
+[0m16:42:13.631499 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/jovyan/dbt_project/target/semantic_manifest.json
+[0m16:42:13.633329 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/jovyan/dbt_project/target/run_results.json
+[0m16:42:13.633943 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 0.36739284, "process_in_blocks": "0", "process_kernel_time": 0.190604, "process_mem_max_rss": "129864", "process_out_blocks": "1717", "process_user_time": 0.987129}
+[0m16:42:13.634326 [debug] [MainThread]: Command `dbt test` succeeded at 16:42:13.634250 after 0.37 seconds
+[0m16:42:13.634579 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8151a4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff860b7d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff860c0a50>]}
+[0m16:42:13.634793 [debug] [MainThread]: Flushing usage events
+[0m16:42:15.171470 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:42:18.718254 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffaede6c90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffaede6bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffaede6ad0>]}
+
+
+============================== 16:42:18.720088 | 803eca78-a013-4280-9c0b-b320c378fe34 ==============================
+[0m16:42:18.720088 [info ] [MainThread]: Running with dbt=1.10.6
+[0m16:42:18.720545 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/home/jovyan/dbt_project/logs', 'version_check': 'True', 'profiles_dir': '/home/jovyan/dbt_project', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt ls', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:42:18.825635 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '803eca78-a013-4280-9c0b-b320c378fe34', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffab7904d0>]}
+[0m16:42:18.854877 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '803eca78-a013-4280-9c0b-b320c378fe34', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb1c68190>]}
+[0m16:42:18.855749 [info ] [MainThread]: Registered adapter: duckdb=1.9.4
+[0m16:42:18.898522 [debug] [MainThread]: checksum: f6e4baf4de20596ffb9d14e6ef805989eb0e1950dedc3cc83d03f20aa023904c, vars: {}, profile: , target: , version: 1.10.6
+[0m16:42:18.953980 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:42:18.954287 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:42:18.972653 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '803eca78-a013-4280-9c0b-b320c378fe34', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffaec436d0>]}
+[0m16:42:19.011333 [debug] [MainThread]: Wrote artifact WritableManifest to /home/jovyan/dbt_project/target/manifest.json
+[0m16:42:19.012470 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/jovyan/dbt_project/target/semantic_manifest.json
+[0m16:42:19.019460 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '803eca78-a013-4280-9c0b-b320c378fe34', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffab287cd0>]}
+[0m16:42:19.019749 [info ] [MainThread]: Found 3 models, 1 source, 429 macros
+[0m16:42:19.020011 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '803eca78-a013-4280-9c0b-b320c378fe34', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffab3c8110>]}
+[0m16:42:19.020609 [info ] [MainThread]: restaurant_data_platform.marts.daily_soak_summary
+[0m16:42:19.020946 [info ] [MainThread]: restaurant_data_platform.staging.stg_soak_prep
+[0m16:42:19.021175 [info ] [MainThread]: restaurant_data_platform.marts.user_performance
+[0m16:42:19.021422 [info ] [MainThread]: source:restaurant_data_platform.raw.soak_prep
+[0m16:42:19.022039 [debug] [MainThread]: Resource report: {"command_name": "list", "command_success": true, "command_wall_clock_time": 0.33193642, "process_in_blocks": "0", "process_kernel_time": 0.088026, "process_mem_max_rss": "127888", "process_out_blocks": "865", "process_user_time": 0.959293}
+[0m16:42:19.022330 [debug] [MainThread]: Command `dbt ls` succeeded at 16:42:19.022250 after 0.33 seconds
+[0m16:42:19.022561 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffafb880d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffab5b81d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffffb3bb7d10>]}
+[0m16:42:19.022794 [debug] [MainThread]: Flushing usage events
+[0m16:42:20.910683 [debug] [MainThread]: An error was encountered while trying to flush usage events
