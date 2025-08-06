@@ -1,7 +1,7 @@
-# __pycache__/
-# *.db
-# .env
-# *.pyc
-# .DS_Store
-# .vscode/
-# data/
+__pycache__/
+*.db
+.env
+*.pyc
+.DS_Store
+.vscode/
+data/
