@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  airflow:
+    image: apache/airflow:2.9.1
+    container_name: airflow
+    restart: always
+    environment:
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=sqlite:////opt/airflow/airflow.db
+    volumes:
+      - ./airflow_dags:/opt/airflow/dags
+    command: webserver
+    ports:
+      - "8080:8080"
+
+  duckdb-jupyter:
+    image: jupyter/base-notebook
+    container_name: duckdb-jupyter
+    volumes:
+      - ./notebooks:/home/jovyan/work
+    ports:
+      - "8888:8888"
